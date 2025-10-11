@@ -1,0 +1,84 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #0073b1; /* LinkedIn blue */
+  color: #fff;
+  font-family: Arial, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .logo:hover {
+  color: #e1ecf4;
+}
+
+/* Navbar Links */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar .nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.navbar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Logout Button Styling */
+.navbar .logout-btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.navbar .logout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive for mobile */
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 16px;
+  }
+
+  .navbar-right {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .navbar .nav-link, .navbar .logout-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+}

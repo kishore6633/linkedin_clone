@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0a66c2;
+  color: white;
+}
+
+.nav-links a, .btn-logout {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-logout {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.post-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.post-form button {
+  padding: 0.5rem 1rem;
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-links {
+    margin-top: 0.5rem;
+  }
+  .auth-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
