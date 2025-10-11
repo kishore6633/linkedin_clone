@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../config";
 import React, { useEffect, useState } from "react";
 import "../styles/Home.css";
 
@@ -16,7 +17,7 @@ export default function Home() {
   // Fetch all posts from backend
   const fetchPosts = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/posts");
+      const res = await fetch(`${API_BASE_URL}/posts`);
       const data = await res.json();
       setPosts(data);
     } catch (err) {
@@ -31,7 +32,7 @@ export default function Home() {
 
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("http://localhost:5000/api/posts", {
+      const res = await fetch(`${API_BASE_URL}/posts`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
