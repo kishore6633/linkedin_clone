@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../../config";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Auth.css";  // instead of ../styles/Auth.css
