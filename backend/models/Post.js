@@ -1,12 +1,8 @@
-// backend/models/Post.js
 import mongoose from "mongoose";
 
-const postSchema = new mongoose.Schema(
-  {
-    content: { type: String, required: true },
-    user: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true }, // link to User
-  },
-  { timestamps: true } // automatically adds createdAt and updatedAt
-);
+const postSchema = new mongoose.Schema({
+  user: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+  content: { type: String, required: true }
+}, { timestamps: true });
 
 export default mongoose.model("Post", postSchema);
