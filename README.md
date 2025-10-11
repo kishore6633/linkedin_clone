@@ -12,7 +12,7 @@ User profile with name, email, and bio
 
 Posts
 
-Create, view, edit, and delete posts
+Create, view posts
 
 Public feed for all users
 
