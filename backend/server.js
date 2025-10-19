@@ -19,7 +19,7 @@ app.use(express.json());
 app.use("/api/auth", authRouter);
 app.use("/api/posts", postRoutes);
 
-// ✅ Default route
+// Default route
 app.get("/", (req, res) => {
   res.send("Backend is running successfully 🚀");
 });
